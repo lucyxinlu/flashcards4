@@ -8,9 +8,13 @@
    <p>Hover the question first.</p>
 <button id="b3"onclick="button()">The answer</button>
 <p id="demo"></p>
+  <!==Display the question and the picture>
 <a class="show_img1" href="">What's the capital of China?</a>
 <div class="hide_img1"><img src="images/China.png"></div>
-
+<a class="show_img2" href="">Who is the president of USA?</a>
+<div class="hide_img2"><img src="images/president.png"></div>
+<a class="show_img3" href="">What's the name of your university?</a>
+<div class="hide_img3"><img src="images/campus.png"></div>
 <script>
  <!--create a button to distinguish the"answer" and "question">
 function button(){
@@ -31,6 +35,10 @@ button:hover:before {
 }
  .hide_img1{ display:none; z-index:9999; position:absolute;}
 .show_img1:hover +.hide_img1{ display:block} 
+  .hide_img2{ display:none; z-index:9999; position:absolute;}
+.show_img2:hover +.hide_img2{ display:block} 
+  .hide_img3{ display:none; z-index:9999; position:absolute;}
+.show_img3:hover +.hide_img3{ display:block} 
  
   </style>
   </body>
