@@ -8,23 +8,9 @@
    <p>Hover the question first.</p>
 <button id="b3"onclick="button()">The answer</button>
 <p id="demo"></p>
-<div id="head">
-        <p><a href="">What's the capital of China?
-            <div id="Q1"><img src="images/China.png">
-            </div>
-        </a>
-         </p>
-        <p> <a href="">Who is the president of USA?
-            <div id="Q2">
-            </div>
-        </a>
-         </p>
-        <p> <a href="">What's the name of your university?
-            <div id="Q3">
-            </div>
-        </a>
-         </p>
-    </div>    
+<a class="show_img1" href="">What's the capital of China?</a>
+<div class="hide_img1"><img src="images/China.png"></div>
+
 <script>
  <!--create a button to distinguish the"answer" and "question">
 function button(){
@@ -43,42 +29,9 @@ button:hover span{
 button:hover:before {
   content: "hover the question first:"
 }
- #Q1{
-        background: url(China.png) no-repeat 0px 0px;
-        width: 150px;
-        height: 150px;
-        position: absolute;
-        z-index:22;
-        border: 2px solid green;
-        display: none;
-    }
-    a:hover #Q1{
-        display:block;
-    }
-#Q2{
-        background: url(president.png) no-repeat 0px 0px;
-        width: 150px;
-        height: 150px;
-        position: absolute;
-        z-index:22;
-        border: 2px solid green;
-        display: none;
-    }
-    a:hover #Q2{
-        display:block;
-    }
- #Q3{
-        background: url(campus.png) no-repeat 0px 0px;
-        width: 150px;
-        height: 150px;
-        position: absolute;
-        z-index:22;
-        border: 2px solid green;
-        display: none;
-    }
-    a:hover #Q3{
-        display:block;
-    }
+ .hide_img1{ display:none; z-index:9999; position:absolute;}
+.show_img1:hover +.hide_img1{ display:block} 
+ 
   </style>
   </body>
 </html>
