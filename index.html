@@ -43,3 +43,80 @@ button:hover:before {
   </style>
   </body>
 </html>
+ 
+<!-- <! DOCTYPE html>
+<html>
+ <head>
+  <mata charset="utf-8">
+</head>
+ <body>
+   <p>Click the button to trigger a function.</p>
+   <p>Hover the question first.</p>
+<button id="b3"onclick="button()">The answer</button>
+	 <button onclick="show()">The question</button>
+<p id="demo"></p>
+  <!==Display the question and the picture>
+<a class="show_img1" href="demo"></a>
+<div class="hide_img1"><img src="images/China.png"></div>
+<a class="show_img2" href="">Who is the president of USA?</a>
+<div class="hide_img2"><img src="images/president.png"></div>
+<a class="show_img3" href="">What's the name of your university?</a>
+<div class="hide_img3"><img src="images/campus.png"></div>
+<script>
+ //create a button to distinguish the"answer" and "question"//
+class question{
+constructor(question,answer){
+this.question=question;
+this.answer=answer;}
+}
+let myFlashcards=[];
+myFlashcards.push(new question('What is the capital of China?'));
+myFlashcards.push(new question('Who is the president of USA?'));
+myFlashcards.push(new question('What is the name of your university?'));
+	
+ /*Create the question array*/
+
+	let i=0;
+ function show(){
+	if(i<myFlashcards.length){
+document.getElementById("demo").innerHTML=myFlashcards[i].question;	
+		 i++;
+	 } else if(i==myFlashcards.length){
+		 i=0;
+document.getElementById("demo").innerHTML=myFlashcards[i].question;
+		 i++;
+	 }
+	 
+ }/*Get the question displayed one at a time*/
+	 
+let answer=new Array();
+answer.push("Beijing","Biden","CMU");
+//Create the answer array//
+	
+function button(){
+ document.getElementById("b3").innerHTML=answer;}
+//Define the onlick event and show the answer//
+	
+
+</script>
+<style>
+ **/*Create the hover by CSS*/**
+ button {background-color: #00a7d0}
+button:hover {background-color: #ff7701}
+button:hover span{
+  display: none
+}
+
+button:hover:before {
+  content: "hover the question first:"
+}
+ .hide_img1{ display:none; z-index:9999; position:absolute;}
+.show_img1:hover +.hide_img1{ display:block} 
+  .hide_img2{ display:none; z-index:9999; position:absolute;}
+.show_img2:hover +.hide_img2{ display:block} 
+  .hide_img3{ display:none; z-index:9999; position:absolute;}
+.show_img3:hover +.hide_img3{ display:block} 
+ 
+  </style>
+  </body>
+</html>-->
