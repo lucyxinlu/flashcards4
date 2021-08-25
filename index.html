@@ -37,7 +37,7 @@ myFlashcards.push(new question('What is the name of your university?','cmu','ima
  function show(){
 	if(i<myFlashcards.length){
 document.getElementById("demo").innerHTML=myFlashcards[i].question;	
-	document.getElementById("picture").innerHTML=myFlashcards[i].image;
+	document.getElementById("picture").src=myFlashcards[i].image;
 	 } else if(i==myFlashcards.length){
 		 i=0;
 document.getElementById("demo").innerHTML=myFlashcards[i].question;
